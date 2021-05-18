@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: 'SourceSansPro';
+        font-weight: normal;
+        src: url(./dist/fonts/SourceSansPro-Regular.ttf) format("ttf");
+    }
+    @font-face {
+        font-family: 'SourceSansPro';
+        font-weight: bold;
+        src: url(./dist/fonts/SourceSansPro-Bold.ttf) format("ttf");
+    }
+    @font-face {
+        font-family: 'ProximaNova';
+        src: url(./dist/fonts/Mark\ Simonson\ -\ Proxima\ Nova\ Regular.otf) format("otf");
+        font-weight: normal;
+    }
+    
+    @font-face {
+        font-family: 'ProximaNova';
+        src: url(./dist/fonts/Mark\ Simonson\ -\ Proxima\ Nova\ Bold.otf) format("otf");
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Test2</title>
+</head>
+
+<body class="m-0 overflow-x-hidden relative">
+    <div id="overlay" class="hidden bg-black bg-opacity-50 absolute inset-0 w-full h-full "></div>
+    <div id="menu-btn" class="cursor-pointer absolute top-10 right-10 z-10 block md:hidden">
+        <img src="svg-imges/burger.svg" alt="burger">
+    </div>
+
+    <header class="bg-no-repeat bg-cover bg-bottom h-480 md:h-750"  style="background-image: url('images/bg.png');">
+        <div class="my-0 mx-auto max-w-1360 relative md:block flex flex-col items-center justify-center">
+            <div class="h-0 md:h-70 md:relative">
+                <div class="flex justify-between items-center md:text-12 md:font-normal md:h-44 md:w-650 lg:w-1078 md:absolute md:top-14 md:left-245 ">
+                    <div class="flex text-white items-center pt-43 justify-center leading-25 relative md:pt-0">
+                        <img src="svg-imges/time.svg" alt="time" class="mt-31 mr-5 transform -translate-y-2/4">
+                        <div class="flex flex-col mr-143 mx-auto md:mr-0">
+                            <div class="text-12 font-bold pl-4">ΑΡΚΑΔΙΑ</div>
+                            <div class="flex flex-col mr-20 text-26">13:28</div>
+                        </div>
+                        <img src="svg-imges/weather.svg" alt="weather">
+                        <div>
+                            <div class="text-12 font-bold pl-4">ΚΑΤΑΙΓΙΔΑ</div>
+                            <div class="text-26">12°C<span class="opacity-40">°F</span></div>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex text-white">
+                        <div class="flex items-center font-bold text-14">
+                            <img src="svg-imges/login.svg" alt="login">
+                            <div class="text-white ml-5 mr-42">Eγγραφή / Σύνδεση</div>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="svg-imges/lang.svg" alt="lang">
+                            <img src="svg-imges/down-caret.svg" alt="dcar" class="ml-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <nav class="md:max-w-920 h-60 mx-auto md:bg-white flex justify-center rounded-md md:relative md:block ">
+                <a href="#" id="logo" class="block md:inline-block rounded-full z-10 mt-5 md:absolute md:top-50% md:left-50 md:mt-0 md:top-32 md:z-20 md:border-10 md:border-primary  md:transform md:-translate-y-2/4"><img class=" w-100 h-100 md:w-180 md:h-180 md:block" src="svg-imges/logo.svg" alt="Logo"></a>
+
+                <ul id="main-menu" class="text-14 font-bold bg-white absolute top-0 -right-20 w-93% h-600 z-10 flex flex-col  p-0 md:w-full md:m-0 md:py-0 md:pr-40 md:pl-270 md:flex md:flex-row md:items-center md:justify-between md:h-60 md:relative list-none font-bold md:rounded-md transform translate-x-900 transition duration-500 ease-in-out md:translate-x-0 ">
+                    <div class="row flex justify-between items-center py-11 px-10 bg-dividercolor md:hidden"> 
+                        <div id="close-btn" class="cursor-pointer">
+                            <img src="svg-imges/x-button.svg" alt="burger">
+                        </div>
+                        <div id="lang-mob" class="flex items-center mr-15">
+                            <img src="svg-imges/lang.svg" alt="lang">
+                            <img src="svg-imges/dow-caret-black.svg" alt="dcar" class="ml-4">
+                        </div>
+                    </div>
+                    <div id="login-mob" class="w-full text-secondary text-14 font-bold flex justify-center border-b-1 border-menucolor mx-auto py-13 md:hidden">
+                        <img src="svg-imges/login-blue.svg" alt="login">
+                        <div id="login-text">Eγγραφή / Σύνδεση</div>
+                    </div>
+                    <li id="dropbtn" class="my-5 mx-20 pt-20 md:my-0 md:ml-5 md:pt-0 group"><a id="drop-btn-a" class="md:inline flex justify-between items-center mb-10 text-14 font-bold md:mb-0 text-secondary hover:text-primary md:pb-50 md:relative " href="#">Η ΟΜΟΣΠΟΝΔΙΑ <img
+                        class="flex md:hidden"   src="svg-imges/mobile-chevron.svg" alt="mob"></a>
+                        <ul id="hover-menu" class="md:hidden group-hover:flex flex flex-col justify-start  items-start md:justify-between w-full h-full md:h-365 md:w-275 text-12 font-bold rounded-md absolute top-0 left-0  md:top-70 md:left-271 bg-white z-20 pt-16 pb-23 pl-20 transform translate-x-900 transition duration-500 ease-in-out md:translate-x-0">
+                            <div id="close-hover" class="flex items-center md:hidden cursor-pointer text-12 font-normal text-secondary hover:text-primary">
+                                <img src="svg-imges/close-hover.svg" alt="closehover">Επιστροφή
+                            </div>
+                            <li class="my-10"><a class="text-secondary hover:text-primary" href="#">Ιστορία</a></li>
+                            <li class="my-10"><a class="text-secondary hover:text-primary" href="#">Πρόεδρος - Βιογραφικό Σημείωμα</a></li>
+                            <li class="my-10"><a class="text-secondary hover:text-primary" href="#">Μήνυμα Προέδρου</a></li>
+                            <li class="my-10"><a class="text-secondary hover:text-primary" href="#">Districts</a></li>
+                            <li class="my-10"><a class="text-secondary hover:text-primary" href="#">Διατελεσαντες Προέδροι</a></li>
+                            <li class="my-10"><a class="text-secondary hover:text-primary" href="#">Αποστολή - Αξίες</a></li>
+                            <li class="my-10"><a class="text-secondary hover:text-primary" href="#">Πορεία - Εξέλιξη</a></li>
+                            <li class="my-10"><a class="text-secondary hover:text-primary" href="#">Ο Έλληνας πρέσβης στην Ουάσιγκτον</a></li>
+                            <li class="my-10"><a class="text-secondary hover:text-primary" href="#">Ο Πρέσβης ΗΠΑ στην Αθήνα</a></li>
+                            <li class="my-10"><a class="text-secondary hover:text-primary" href="#">Ο Οικουμενικός Πατριάρχης</a></li>
+                            <li class="my-10"><a class="text-secondary hover:text-primary" href="#">Ο Αρχιεπίσκοπος Αμερικής</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="my-5 mx-20 md:ml-5 md:my-0 md:mx-0"><a class="text-secondary flex justify-between items-center mb-10 text-14 font-bold md:mb-0 hover:text-primary" href="#">ΑΡΚΑΔΩΝ ΕΡΓΑ <img class="flex md:hidden" src="svg-imges/mobile-chevron.svg"
+                                alt="mob"></a>
+                    </li>
+                    <li class="my-5 mx-20 md:ml-5 md:my-0 md:mx-0"><a class="text-secondary flex justify-between items-center mb-10 text-14 font-bold md:mb-0 hover:text-primary" href="#">ΕΠΩΝΥΜΟΙ ΑΡΚΑΔΕΣ <img class="flex md:hidden" src="svg-imges/mobile-chevron.svg"
+                                alt="mob"></a></li>
+                    <li class="my-5 mx-20 md:ml-5 md:my-0 md:mx-0"><a class="text-secondary flex justify-between items-center mb-10 text-14 font-bold md:mb-0 hover:text-primary" href="#">ΝΕΑ-ΕΝΗΜΕΡΩΣΗ <img class="flex md:hidden" src="svg-imges/mobile-chevron.svg"
+                                alt="mob"></a></li>
+                    <li class="my-5 mx-20 md:ml-5 md:my-0 md:mx-0"><a class="text-secondary flex justify-between items-center mb-10 text-14 font-bold md:mb-0 hover:text-primary" href="#">ΕΠΙΣΚΕΨΗ ΣΤΗΝ ΑΡΚΑΔΙΑ <img class="flex md:hidden" src="svg-imges/mobile-chevron.svg"
+                                alt="mob"></a></li>
+                    <li class="my-5 mx-20 md:ml-5 md:my-0 md:mx-0"><a class="text-secondary flex justify-between items-center mb-10 text-14 font-bold md:mb-0 hover:text-primary" href="#">ΑΝΑΖΗΤΗΣΕΙΣ ΣΤΗΝ ΑΡΚΑΔΙΑ <img class="flex md:hidden"
+                                src="svg-imges/mobile-chevron.svg" alt="mob"></a></li>
+                    <li class="my-5 mx-20 md:ml-5 md:my-0 md:mx-0"><a class="text-secondary flex justify-between items-center mb-10 text-14 font-bold md:mb-0 hover:text-primary" href="#"><img class="email-icon hidden md:flex" src="svg-imges/mail.svg" alt="mail">
+                            <span id="mobile-last-li" class="flex md:hidden">EΠΙΚΟΙΝΩΝΙΑ</span><img
+                            class="flex md:hidden"   src="svg-imges/mobile-chevron.svg" alt="mob">
+                        </a class="text-secondary flex justify-between items-center mb-10 text-14 font-bold md:mb-0 hover:text-primary"></li>
+                </ul>
+
+
+            </nav>
+            <div class="block mt-60 mx-auto mb-0 h-20 md:absolute md:top-150 md:left-246 md:m-0">
+                <img src="svg-imges/pan-arcadian.svg"  alt="panarcadian">
+            </div>
+
+             <div class="bg-no-repeat bg-cover  bg-center mx-auto  flex flex-col  items-center border-2 shadow-md text-center text-white w-280 h-280  mt-30 md:border-6 border-white rounded-full  md:w-464 md:h-464 md:p-40 md:mt-70 md:mb-0" style="background-image:url('images/circle.png') ;">
+                <img src="svg-imges/small-logo.svg" alt="" class="mt-19 w-18 h-18 md:w-24 md:h-24 md:mt-0">
+
+                <h3 class="text-12 font-bold tracking-wide mt-4 mb-15 md:mt-10 md:mb-30 ">ΚΑΛΩΣ ΗΛΘΑΤΕ</h3>
+                <h2 class="text-18 leading-20 mb-15 md:mb-30 md:text-24 font-bold">Η αποστολή μας</h2>
+                <p class="text-16 hidden md:inline-block">Ο Παναρκαδικής Ομοσπονδίας Αμερικής είναι μια πανεθνική μη κερδοσκοπικού αδελφό
+                    ελληνικό-αμερικανική
+                    οργάνωση τα μέλη της οποίας κατεβαίνουν από την περιοχή της Αρκαδίας στην Πελοπόννησο, στη νότια
+                    Ελλάδα …</p>
+                <p class="text-14 w-218 text-center mb-26 inline-block h-70 md:hidden">Ο Παναρκαδικής Ομοσπονδίας Αμερικής είναι μια πανεθνική μη κερδοσκοπικού αδελφό
+                    ελληνικό-αμερικανική οργάνωση …</p>
+                <a href="#" class=" rounded-md border-1 text-14 font-bold text-white w-140 h-40 md:h-50 md:w-200 md:py-16 md:mt-30 inline-flex items-center justify-center">ΠΕΡΙΣΣΟΤΕΡΑ</a>
+            </div>
+
+        </div> 
+
+
+    </header>
+     <section id="section-2">
+        <div class="container bg-dividercolor md:bg-hero-pattern md:bg-no-repeat bg-cover bg-center m-auto max-w-full max-h-744 flex flex-col items-center justify-center overflow-hidden">
+            <img id="tree" class="mt-30 md:mt-40 mx-0 mb-10 md:mb-20" src="svg-imges/tree.svg" alt="Tree">
+            <div class="logo-texts w-218 md:w-255 h-36 md:h-42 my-0 mx-auto mb-30 md:mb-40">
+                <img src="svg-imges/wegreeks.svg" alt="greeks">
+
+                <img src="svg-imges/weflourish.svg" alt="flourish">
+            </div>
+            <div id="mid-text" class=" text-34 w-320 md:w-full md:text-48 font-bold md:leading-50 text-secondprimary text-center">Μετριόμαστε,γιατί μετράμε!</div>
+            <div class="main-texts hidden md:flex  mt-40 mx-auto">
+                <div id="left-text" class="text-left w-464 h-245 mr-60 mb-30">
+                    <div class="title1 text-18 font-bold mb-20 text-secondary">Γενική απογραφή των αποδήμων Αρκάδων στις ΗΠΑ και επαναπατρισθέντων από τις ΗΠΑ
+                    </div>
+                    <div class="leading-25 m-4">Η Παναρκαδική Ομοσπονδία Αμερικής πραγματοποιεί απογραφή των Αρκάδων που
+                        διαμένουν και
+                        εργάζονται
+                        στις ΗΠΑ, (ανεξαρτήτως υπηκότητας). </div>
+                    <div id="left-mid-text" class="text-gray-800 text-16 font-bold mt-10 mb-15 mr-4">Το αποτύπωμα της Αρκαδικής γης μας συνδέει!</div>
+                    <div class="leading-25 m-4">Όση χιλιομετρική απόσταση και αν μας χωρίζει, όσες γενιές και να έχουμε...ψηλώσει
+                        πέρα απο τις
+                        ρίζες
+                        μας, η Αρκαδία, μας ενώνει!</div>
+                </div>
+
+                <div id="right-text" class="text-left w-475 h-235 mb-40">
+                    <div class="title2 text-18 font-bold text-secondary mb-40 ml-5">Απογραφόμαστε...</div>
+                    <div class="icon-paragraphs flex leading-25"><img src="svg-imges/text-icon.svg" alt="icon"> Για να γνωρίσουμε ο ένας
+                        τον άλλο.
+                    </div>
+                    <div class="icon-paragraphs flex leading-25"><img src="svg-imges/text-icon.svg" alt="icon" class="mr-1 pb-25"> Για να αντλήσουμε δύναμη
+                        απο τις
+                        ρίζες μας και την
+                        καταγωγή
+                        μας.
+                    </div>
+                    <div class="icon-paragraphs flex leading-25">
+                        <img src="svg-imges/text-icon.svg" alt="icon" class="mr-1 pb-25">
+                        <span> Για να είμαστε χρήσιμοι και να παρεμβαίνουμε δημιουργικά για
+                            τις ΗΠΑ την Ελλάδα και την Αρκαδία.</span>
+                    </div>
+                    <div class="icon-paragraphs flex leading-25"><img src="svg-imges/text-icon.svg" alt="icon"> Για να υλοποιήσουμε τα
+                        σχέδια και
+                        τα οραματά μας.</div>
+                    <div class="icon-paragraphs flex leading-25"><img src="svg-imges/text-icon.svg" alt="icon"> Για να είμαστε ισχυροί.
+                    </div>
+                </div>
+            </div>
+            <div class="main-texts-mob flex md:hidden flex flex-col justify-center items-center text-center mt-14 mb-30">
+                <div class="title1 text-18 font-bold text-secondary leading-20 mb-20">Γενική απογραφή των αποδήμων Αρκάδων στις ΗΠΑ και επαναπατρισθέντων από τις ΗΠΑ
+                </div>
+                <div class="leading-25 text-16 text-sect2color">Η Παναρκαδική Ομοσπονδία Αμερικής πραγματοποιεί απογραφή των Αρκάδων που
+                    διαμένουν και
+                    εργάζονται
+                    στις ΗΠΑ, (ανεξαρτήτως υπηκότητας). </div>
+                <div id="left-mid-text" class="leading-25 text-sect2color font-bold mb-10">Το αποτύπωμα της Αρκαδικής γης μας συνδέει!</div>
+                <div class="leading-25 txt-16 text-sect2color">Όση χιλιομετρική απόσταση και αν μας χωρίζει, όσες γενιές και να </div>
+            </div>
+            <div id="last-text" class="mx-auto mb-38 md:mb-53 text-center">
+                <div id="last-text1" class="text-18 font-bold leading-20 md:leading-normal text-secondprimary mb-9 md:mb-5">ΤΕΛΕΤΗ ΕΝΑΡΞΗΣ</div>
+                <div id="last-text2" class="text-24 md:text-34 w-182 md:w-full font-bold text-secondary mb-12 md:mb-9">Παρασκευή 20 Απριλίου 2108</div>
+                <div id="last-text3" class="text-18 leading-20 md:leading-normal font-bold text-secondary">ΝΕΑ ΥΟΡΚΗ</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="articles" class="bg-secondary h-650 w-full">
+        <div class="container flex flex-col justify-center items-start md:items-center mx-auto w-full">
+            <div id="small-logo" class="text-center text-white text-12 font-bold my-30 mx-auto md:mt-40 md:mb-30 md:mx-0">
+                <img src="svg-imges/small-logo.svg" alt="smallLogo" class="mb-10 mx-auto">
+                <div>ΕΡΓΑ & ΔΡΑΣΤΗΡΙΟΤΗΤΕΣ</div>
+            </div>
+
+            <div class="photos text-white grid grid-cols-4 w-1100 md:w-full gap-20 text-left ml-20 md:mx-auto mb-12">
+                <div class="photo">
+                    <img src="./images/firstimg.jpg" alt="first" class="md:w-300 w-260 h-200">
+                    <p class="p1 text-18 leading-20 md:leading-normal md:text-24 font-bold text-left md:w-300  md:h-60 mt-20 mx-0 mb-12">Γενικού Παναρκαδικό Νοσοκομείο Τρίπολης</p>
+                    <p class="p2 text-16 leading-25 md:w-300 h-70 text-left mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolor.
+                    </p>
+                    <div class="more w-150 h-46 flex items-center  pt-14">
+                        <img src="svg-imges/red-line.svg" alt="red-line" class="w-24 h-24 my-11 mx-5">
+                        <p class="text-14 font-bold">ΠΕΡΙΣΣΟΤΕΡΑ</p>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="./images/secondimg.jpg" alt="first" class="md:w-300 w-260 h-200">
+                    <p class="p1 text-18 leading-20 md:leading-normal md:text-24 font-bold text-left  md:w-300  md:h-60 mt-20 mx-0 mb-12">Ο παραδοσιακός οικισμός του Λεωνιδίου</p>
+                    <p class="p2 text-16 leading-25 md:w-300 h-70 text-left mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolor.
+                    </p>
+                    <div class="more  w-150 h-46 flex items-center pt-14">
+                        <img src="svg-imges/red-line.svg" alt="red-line" class="w-24 h-24 my-11 mx-5">
+                        <p class="text-14 font-bold">ΠΕΡΙΣΣΟΤΕΡΑ</p>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="./images/thirdimg.jpg" alt="first" class="md:w-300 w-260 h-200">
+                    <p class="p1 text-18 leading-20 md:leading-normal md:text-24 font-bold text-left  md:w-300  md:h-60 mt-20 mx-0 mb-12">Κυνουρία, Εκεί που δεσπόζει ο Πάρνωνας</p>
+                    <p class="p2 text-16 leading-25  md:w-300 h-70 text-left mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolor.
+                    </p>
+                    <div class="more  w-150 h-46 flex items-center pt-14">
+                        <img src="svg-imges/red-line.svg" alt="red-line" class="w-24 h-24 my-11 mx-5">
+                        <p  class="text-14 font-bold">ΠΕΡΙΣΣΟΤΕΡΑ</p>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="./images/fourthimg.jpg" alt="first" class="md:w-300 w-260 h-200">
+                    <p class="p1 text-18 leading-20 md:leading-normal md:text-24 font-bold text-left  md:w-300  md:h-60 mt-20 mx-0 mb-12">Οι ελληνικές πόλεις με τα καλύτερα πάρκα!</p>
+                    <p class="p2 text-16 leading-25 md:w-300 h-70 text-left mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolor.
+                    </p>
+                    <div class="more w-150 h-46 flex items-center pt-14">
+                        <img src="svg-imges/red-line.svg" alt="red-line" class="w-24 h-24 my-11 mx-5">
+                        <p  class="text-14 font-bold">ΠΕΡΙΣΣΟΤΕΡΑ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="btn" class="rounded-md border-1 border-white w-280 md:w-200 py-16 px-0 text-center mb-46 mt-31 md:mt-0 ml-20 md:ml-0">
+                <a href="#" class="text-14 md:text-16 text-white">ΠΕΡΙΣΣΟΤΕΡΑ</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="form-section" class="w-740 max-h-665 bg-white m-auto max-w-full">
+            <div id="contact" class="flex flex-col items-center justify-center md:mt-62 md:mx-360 md:mb-73 w-full my-0 mx-auto md:w-0">
+
+                <div id="formtitle" class="text-14 md:text-12 font-bold md:tracking-wide text-center text-secondary  mt-32 md:mt-0 mb-34 md:mb-0 ">ΕΠΙΚΟΙΝΩΝΙΑ</div>
+                <div id="divider" class="hidden md:flex w-740 h-1 bg-dividercolor overflow-visible mt-20 mx-0 mb-16"></div>
+                <div class="form-group w-90% md:w-full flex flex-col justify-center items-center">
+
+                    <form>
+                        <label for="name" class="text-12 tracking-tight">Όνοματεπώνυμο</label>
+                        <input type="text" name="name" id="name" class="w-full md:w-619 h-46 rounded-md border-1 border-formcolor mt-2 mb-13 md:m-0">
+                        <label class="text-12 tracking-tight">Τηλέφωνο</label>
+                        <input type="text" name="tel" class="w-full bg-formphone bg-no-repeat bg-phone md:w-619 h-46 rounded-md border-1 border-formcolor mt-2 mb-13 md:m-0">
+                        <label class="text-12 tracking-tight">Email</label>
+                        <input type="text" name="email" class="w-full bg-emailphone bg-no-repeat bg-email md:w-619 h-46 rounded-md border-1 border-formcolor mt-2 mb-13 md:m-0">
+                        <label class="text-12 tracking-tight">Μήνυμα</label>
+                        <textarea name="msg" class="w-full md:w-619 h-119 rounded-md border-1 border-formcolor mt-2 mb-13 md:m-0"></textarea>
+                    </form>
+                    <div id="divider2" class="w-740 h-1 bg-dividercolor overflow-visible mt-26 mx-0 mb-21"></div>
+                    <div class="w-full md:w-619 flex justify-end">
+                        <button id="red-btn" class="w-130 md:w-240 h-50 bg-secondprimary text-white text-14 font-bold rounded-md border-none flex justify-center items-center relative">ΑΠΟΣΤΟΛΗ<img src="svg-imges/red-button.svg" alt="redicon" class="absolute bottom-13 md:bottom-0 md:top-13 right-3 md:right-10"></button>
+                    </div>
+
+                </div>
+            </div>
+        
+    </section>
+
+
+
+    <footer class="h-442 bg-secondary mt-75 mx-auto">
+        
+        <div class="container relative mx-auto max-w-1360">
+            <button id="go-up" class="bg-secondprimary w-44 h-44 rounded-full p-10 absolute right-10 md:right-100 bottom-60 md:bottom-398  border-none"><img src="svg-imges/go-up.svg" alt="go-up" class="w-24 h-24"></button>
+            <div id="footer" class="flex flex-col justify-center items-center">
+                <img id="footer-logo" src="svg-imges/logo.svg" alt="logo" class="w-140 md:w-180 h-140 md:h-180 mt-30 mx-auto mb-20">
+                <img id="footer-text" src="svg-imges/pan-arcadian.svg" alt="arcadian" class=" mt-0 mx-auto mb-30 md:mb-27">
+                <div class="w-280 md:w-320 h-40 flex justify-between" >
+                    <img src="svg-imges/fb.svg" alt="fb">
+                    <img src="svg-imges/twitter.svg" alt="twitter">
+                    <img src="svg-imges/linkedin.svg" alt="linkedin">
+                    <img src="svg-imges/instagram.svg" alt="instagram">
+                    <img src="svg-imges/youtube.svg" alt="youtube">
+                </div>
+
+                <ul id="main-menu-footer" class="flex flex-col md:flex-row items-center justify-between h-246 md:h-30 md:w-1100 relative text-white my-30 md:mt-30 md:mb-8 text-14 font-bold">
+                    <li><a href="#" class="hover:text-primary">Η ΟΜΟΣΠΟΝΔΙΑ</a></li>
+                    <li><a href="#" class="hover:text-primary">ΑΡΚΑΔΩΝ ΕΡΓΑ</a></li>
+                    <li><a href="#" class="hover:text-primary">ΕΠΩΝΥΜΟΙ ΑΡΚΑΔΕΣ</a></li>
+                    <li><a href="#" class="hover:text-primary">ΝΕΑ-ΕΝΗΜΕΡΩΣΗ</a></li>
+                    <li><a href="#" class="hover:text-primary">ΕΠΙΣΚΕΨΗ ΣΤΗΝ ΑΡΚΑΔΙΑ</a></li>
+                    <li><a href="#" class="hover:text-primary">ΑΝΑΖΗΤΗΣΗ ΣΤΗΝ ΑΡΚΑΔΙΑ</a></li>
+                    <li><a href="#" class="hover:text-primary">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+                </ul>
+
+                <p id="final-text" class="text-14 mb-14 text-footercolor">©2018 Pan Arcadian Federation of America</p>
+            </div>
+
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
